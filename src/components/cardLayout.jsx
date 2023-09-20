@@ -13,18 +13,17 @@ import './cardLayout.css'
 // }
 
 
-function CardLayout( Urls) {
+function CardLayout( Urls) {    
     const [urls, setUrls] = useState(Urls)
     const [clicked, setClicked] =  useState([])
     const [score, setScore] = useState(0)
     const [best, setBest] = useState(0)
-    // console.log(urls[0])
-    // console.log(urls.length)
+
     function shuffle() {
         let shuffled = urls.slice(0);
-		for (let i = 0; i < shuffled.length; i++) {
-			const j = Math.floor(Math.random() * shuffled.length);
-			[shuffled[i], shuffled[j]] = [shuffled[j],shuffled[i]];
+		for (let n = 0; n < shuffled.length; n++) {
+			const m = Math.floor(Math.random() * shuffled.length);
+			[shuffled[n], shuffled[m]] = [shuffled[m],shuffled[n]];
 		}
         setUrls(shuffled)
       }

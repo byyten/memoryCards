@@ -15,23 +15,23 @@ const giphyTrendingURL = (count) => 'https://api.giphy.com/v1/stickers/trending?
 function App() {
   // const [count, setCount] = useState(0)
   const [urls, setUrls] = useState(json) // useState(code) // .slice(0,10)
-  const [data, setData] = useState([])
+  const [data, setData] = useState()
 
   console.log('using local urls')
-  useEffect(() => {
-    async function getGiphyTrendingData() {
-      try {
-        const resp = await fetch(giphyTrendingURL(count))
-        const json = await resp.json()
-        console.log(json)
-        setData(json.data)
-        console.log(' ran effect urls ' + urls.length )
-      } catch (err) {
-        console.log(err)
-      }      
-    }
-    getGiphyTrendingData()
-  }, [] )
+  // useEffect(() => {
+  //   async function getGiphyTrendingData() {
+  //     try {
+  //       const resp = await fetch(giphyTrendingURL(count))
+  //       const json = await resp.json()
+  //       console.log(json)
+  //       setUrls(json.data)
+  //       console.log(' ran effect urls ' + urls.length )
+  //     } catch (err) {
+  //       console.log(err)
+  //     }      
+  //   }
+  //   getGiphyTrendingData()
+  // }, [urls] )
 
  
   
