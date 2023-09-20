@@ -4,7 +4,7 @@ import { Card } from './card'
 import './cardLayout.css'
 
 
-// const giphyApiKey="11sptLEN2oMJ7gMzr9pcjnL0HashZAUt"   components/
+// const giphyApiKey="1v1sptLEN2oMJ7gMzr9pcjnL0HshZAUt"   components/
 // const giphyTrendingURL = () => 'https://api.giphy.com/v1/stickers/trending?limit=12&api_key=' + giphyApiKey
 
 // async function getGiphyTrendingData() {
